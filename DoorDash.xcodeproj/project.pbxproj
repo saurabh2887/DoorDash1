@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		091A33F1210D016C001B2C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A33F0210D016C001B2C92 /* AppDelegate.swift */; };
+		091A33F3210D016C001B2C92 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A33F2210D016C001B2C92 /* AddressViewController.swift */; };
+		091A33F6210D016C001B2C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091A33F4210D016C001B2C92 /* Main.storyboard */; };
+		091A33F9210D016C001B2C92 /* DoorDash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 091A33F7210D016C001B2C92 /* DoorDash.xcdatamodeld */; };
+		091A33FB210D016F001B2C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 091A33FA210D016F001B2C92 /* Assets.xcassets */; };
+		091A33FE210D016F001B2C92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091A33FC210D016F001B2C92 /* LaunchScreen.storyboard */; };
+		091A340B210D1E38001B2C92 /* DoorDashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A340A210D1E38001B2C92 /* DoorDashViewModel.swift */; };
+		091A340D210D1E93001B2C92 /* DoorDashTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A340C210D1E93001B2C92 /* DoorDashTabBarController.swift */; };
+		091A340F210D21D9001B2C92 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A340E210D21D9001B2C92 /* ExploreViewController.swift */; };
+		091A3411210D223A001B2C92 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A3410210D223A001B2C92 /* FavoritesViewController.swift */; };
+		091A3414210D284B001B2C92 /* Alamofire.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 091A3412210D284B001B2C92 /* Alamofire.framework.dSYM */; };
+		091A3416210D2870001B2C92 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A3413210D284B001B2C92 /* Alamofire.framework */; };
+		091A3417210D2870001B2C92 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 091A3413210D284B001B2C92 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		091A341B210D2C9A001B2C92 /* DoorDashTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A341A210D2C9A001B2C92 /* DoorDashTableViewCell.swift */; };
+		091A341D210D5AFF001B2C92 /* ExploreDoorDashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A341C210D5AFF001B2C92 /* ExploreDoorDashModel.swift */; };
+		091A3420210DB913001B2C92 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A341E210DB913001B2C92 /* AlamofireImage.framework */; };
+		091A3421210DB913001B2C92 /* AlamofireImage.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 091A341F210DB913001B2C92 /* AlamofireImage.framework.dSYM */; };
+		091A3423210DBEF9001B2C92 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 091A341E210DB913001B2C92 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		091A342C210E71F9001B2C92 /* DoorDashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A342B210E71F9001B2C92 /* DoorDashTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		091A342E210E71F9001B2C92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 091A33E5210D016C001B2C92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 091A33EC210D016C001B2C92;
+			remoteInfo = DoorDash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		091A3418210D2870001B2C92 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				091A3417210D2870001B2C92 /* Alamofire.framework in Embed Frameworks */,
+				091A3423210DBEF9001B2C92 /* AlamofireImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		091A33ED210D016C001B2C92 /* DoorDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		091A33F0210D016C001B2C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		091A33F2210D016C001B2C92 /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		091A33F5210D016C001B2C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		091A33F8210D016C001B2C92 /* DoorDash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoorDash.xcdatamodel; sourceTree = "<group>"; };
+		091A33FA210D016F001B2C92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		091A33FD210D016F001B2C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		091A33FF210D016F001B2C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		091A340A210D1E38001B2C92 /* DoorDashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorDashViewModel.swift; sourceTree = "<group>"; };
+		091A340C210D1E93001B2C92 /* DoorDashTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorDashTabBarController.swift; sourceTree = "<group>"; };
+		091A340E210D21D9001B2C92 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		091A3410210D223A001B2C92 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		091A3412210D284B001B2C92 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = SOURCE_ROOT; };
+		091A3413210D284B001B2C92 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		091A341A210D2C9A001B2C92 /* DoorDashTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorDashTableViewCell.swift; sourceTree = "<group>"; };
+		091A341C210D5AFF001B2C92 /* ExploreDoorDashModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDoorDashModel.swift; sourceTree = "<group>"; };
+		091A341E210DB913001B2C92 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
+		091A341F210DB913001B2C92 /* AlamofireImage.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AlamofireImage.framework.dSYM; path = Carthage/Build/iOS/AlamofireImage.framework.dSYM; sourceTree = SOURCE_ROOT; };
+		091A3429210E71F9001B2C92 /* DoorDashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoorDashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		091A342B210E71F9001B2C92 /* DoorDashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorDashTests.swift; sourceTree = "<group>"; };
+		091A342D210E71F9001B2C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		091A33EA210D016C001B2C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091A3416210D2870001B2C92 /* Alamofire.framework in Frameworks */,
+				091A3420210DB913001B2C92 /* AlamofireImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		091A3426210E71F9001B2C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		091A33E4210D016C001B2C92 = {
+			isa = PBXGroup;
+			children = (
+				091A33EF210D016C001B2C92 /* DoorDash */,
+				091A342A210E71F9001B2C92 /* DoorDashTests */,
+				091A33EE210D016C001B2C92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		091A33EE210D016C001B2C92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				091A33ED210D016C001B2C92 /* DoorDash.app */,
+				091A3429210E71F9001B2C92 /* DoorDashTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		091A33EF210D016C001B2C92 /* DoorDash */ = {
+			isa = PBXGroup;
+			children = (
+				091A3408210D1DDF001B2C92 /* View Model */,
+				091A3407210D1D99001B2C92 /* Controller */,
+				091A3419210D2C66001B2C92 /* Custom Views */,
+				091A3424210E7148001B2C92 /* Views */,
+				091A3409210D1DEC001B2C92 /* Model */,
+				091A33FA210D016F001B2C92 /* Assets.xcassets */,
+				091A33FC210D016F001B2C92 /* LaunchScreen.storyboard */,
+				091A33FF210D016F001B2C92 /* Info.plist */,
+				091A3413210D284B001B2C92 /* Alamofire.framework */,
+				091A3412210D284B001B2C92 /* Alamofire.framework.dSYM */,
+				091A341E210DB913001B2C92 /* AlamofireImage.framework */,
+				091A341F210DB913001B2C92 /* AlamofireImage.framework.dSYM */,
+			);
+			path = DoorDash;
+			sourceTree = "<group>";
+		};
+		091A3407210D1D99001B2C92 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				091A33F0210D016C001B2C92 /* AppDelegate.swift */,
+				091A33F2210D016C001B2C92 /* AddressViewController.swift */,
+				091A340C210D1E93001B2C92 /* DoorDashTabBarController.swift */,
+				091A340E210D21D9001B2C92 /* ExploreViewController.swift */,
+				091A3410210D223A001B2C92 /* FavoritesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		091A3408210D1DDF001B2C92 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				091A340A210D1E38001B2C92 /* DoorDashViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		091A3409210D1DEC001B2C92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				091A33F7210D016C001B2C92 /* DoorDash.xcdatamodeld */,
+				091A341C210D5AFF001B2C92 /* ExploreDoorDashModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		091A3419210D2C66001B2C92 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				091A341A210D2C9A001B2C92 /* DoorDashTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		091A3424210E7148001B2C92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				091A33F4210D016C001B2C92 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		091A342A210E71F9001B2C92 /* DoorDashTests */ = {
+			isa = PBXGroup;
+			children = (
+				091A342B210E71F9001B2C92 /* DoorDashTests.swift */,
+				091A342D210E71F9001B2C92 /* Info.plist */,
+			);
+			path = DoorDashTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		091A33EC210D016C001B2C92 /* DoorDash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 091A3402210D016F001B2C92 /* Build configuration list for PBXNativeTarget "DoorDash" */;
+			buildPhases = (
+				091A33E9210D016C001B2C92 /* Sources */,
+				091A33EA210D016C001B2C92 /* Frameworks */,
+				091A33EB210D016C001B2C92 /* Resources */,
+				091A3418210D2870001B2C92 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoorDash;
+			productName = DoorDash;
+			productReference = 091A33ED210D016C001B2C92 /* DoorDash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		091A3428210E71F9001B2C92 /* DoorDashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 091A3430210E71F9001B2C92 /* Build configuration list for PBXNativeTarget "DoorDashTests" */;
+			buildPhases = (
+				091A3425210E71F9001B2C92 /* Sources */,
+				091A3426210E71F9001B2C92 /* Frameworks */,
+				091A3427210E71F9001B2C92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				091A342F210E71F9001B2C92 /* PBXTargetDependency */,
+			);
+			name = DoorDashTests;
+			productName = DoorDashTests;
+			productReference = 091A3429210E71F9001B2C92 /* DoorDashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		091A33E5210D016C001B2C92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Saurabh Anand";
+				TargetAttributes = {
+					091A33EC210D016C001B2C92 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					091A3428210E71F9001B2C92 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 091A33EC210D016C001B2C92;
+					};
+				};
+			};
+			buildConfigurationList = 091A33E8210D016C001B2C92 /* Build configuration list for PBXProject "DoorDash" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 091A33E4210D016C001B2C92;
+			productRefGroup = 091A33EE210D016C001B2C92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				091A33EC210D016C001B2C92 /* DoorDash */,
+				091A3428210E71F9001B2C92 /* DoorDashTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		091A33EB210D016C001B2C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091A33FE210D016F001B2C92 /* LaunchScreen.storyboard in Resources */,
+				091A33FB210D016F001B2C92 /* Assets.xcassets in Resources */,
+				091A33F6210D016C001B2C92 /* Main.storyboard in Resources */,
+				091A3421210DB913001B2C92 /* AlamofireImage.framework.dSYM in Resources */,
+				091A3414210D284B001B2C92 /* Alamofire.framework.dSYM in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		091A3427210E71F9001B2C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		091A33E9210D016C001B2C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091A340D210D1E93001B2C92 /* DoorDashTabBarController.swift in Sources */,
+				091A33F9210D016C001B2C92 /* DoorDash.xcdatamodeld in Sources */,
+				091A341D210D5AFF001B2C92 /* ExploreDoorDashModel.swift in Sources */,
+				091A3411210D223A001B2C92 /* FavoritesViewController.swift in Sources */,
+				091A340F210D21D9001B2C92 /* ExploreViewController.swift in Sources */,
+				091A33F3210D016C001B2C92 /* AddressViewController.swift in Sources */,
+				091A341B210D2C9A001B2C92 /* DoorDashTableViewCell.swift in Sources */,
+				091A340B210D1E38001B2C92 /* DoorDashViewModel.swift in Sources */,
+				091A33F1210D016C001B2C92 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		091A3425210E71F9001B2C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091A342C210E71F9001B2C92 /* DoorDashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		091A342F210E71F9001B2C92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 091A33EC210D016C001B2C92 /* DoorDash */;
+			targetProxy = 091A342E210E71F9001B2C92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		091A33F4210D016C001B2C92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				091A33F5210D016C001B2C92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		091A33FC210D016F001B2C92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				091A33FD210D016F001B2C92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		091A3400210D016F001B2C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		091A3401210D016F001B2C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		091A3403210D016F001B2C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DoorDash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saurabh.DoorDash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		091A3404210D016F001B2C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DoorDash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saurabh.DoorDash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		091A3431210E71F9001B2C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DoorDashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saurabh.DoorDashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoorDash.app/DoorDash";
+			};
+			name = Debug;
+		};
+		091A3432210E71F9001B2C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DoorDashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saurabh.DoorDashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoorDash.app/DoorDash";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		091A33E8210D016C001B2C92 /* Build configuration list for PBXProject "DoorDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				091A3400210D016F001B2C92 /* Debug */,
+				091A3401210D016F001B2C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		091A3402210D016F001B2C92 /* Build configuration list for PBXNativeTarget "DoorDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				091A3403210D016F001B2C92 /* Debug */,
+				091A3404210D016F001B2C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		091A3430210E71F9001B2C92 /* Build configuration list for PBXNativeTarget "DoorDashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				091A3431210E71F9001B2C92 /* Debug */,
+				091A3432210E71F9001B2C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		091A33F7210D016C001B2C92 /* DoorDash.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				091A33F8210D016C001B2C92 /* DoorDash.xcdatamodel */,
+			);
+			currentVersion = 091A33F8210D016C001B2C92 /* DoorDash.xcdatamodel */;
+			path = DoorDash.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 091A33E5210D016C001B2C92 /* Project object */;
+}
